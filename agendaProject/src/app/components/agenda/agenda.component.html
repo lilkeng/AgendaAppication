@@ -1,0 +1,11 @@
+<div class="month-box">
+  <ul *ngFor="let week of monthArr" class="month_body">
+    <li *ngFor="let day of week" class="day">
+      <span class="day">
+        {{day}}
+      </span>
+      <app-agenda-daily [date]="day"></app-agenda-daily>
+    </li>
+  </ul>
+</div>
+

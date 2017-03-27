@@ -1,0 +1,10 @@
+.day-container {
+	height:80px;
+}
+.day-container input {
+	width: 95%;
+	margin: 1px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

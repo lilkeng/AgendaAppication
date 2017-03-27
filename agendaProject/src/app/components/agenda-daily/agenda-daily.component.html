@@ -1,0 +1,10 @@
+
+<div class="day-container" *ngIf="date" (dblclick)="createNewEvent()">
+	<div class="list-group">
+		<div *ngFor="let event of events" >
+			<input #input [(ngModel)]="event.desc" (blur)="updateEvent(event, event.id, input.value)" (keyup)="submitEvent(event, event.id, input.value)">
+		</div>
+	</div>
+</div>
+
+ 
